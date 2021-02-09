@@ -1,5 +1,8 @@
 var c = document.getElementById("myCanvas");
 let cub = document.getElementById("cube");
+let swor = document.getElementById("sword");
+var sword = swor.getContext("2d");
+
 var cube = c.getContext("2d");
 var ctx = c.getContext("2d");
 window.addEventListener("keydown",move)
@@ -8,6 +11,8 @@ ctx.fillStyle = "red";
 ctx.fillRect(0, 0, 450, 450);
 cube.fillStyle = "green";
 cube.fillRect(10, 10, 10, 10);
+sword.fillStyle = "grey"
+sword.fillRect(120,30,5,5)
 let x = cub.getBoundingClientRect().x
 let y =cub.getBoundingClientRect().y
 
