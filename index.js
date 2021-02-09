@@ -10,6 +10,7 @@ cube.fillStyle = "green";
 cube.fillRect(10, 10, 10, 10);
 let x = cub.getBoundingClientRect().x
 let y =cub.getBoundingClientRect().y
+
 function move(){
   if(event.keyCode == 32){
     ctx.clearRect(0, 0, c.width, c.height);
@@ -20,7 +21,7 @@ function move(){
     cube.beginPath();
     cube.fillStyle = "green";
     y -=10
-    cube.fillRect(x, y, 10, 10);
+    cube.fillRect(x, y, 60, 60);
     setTimeout(() =>{
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.beginPath();
@@ -41,7 +42,7 @@ function move(){
     cube.clearRect(x, y, cube.width, cube.height);
     cube.beginPath();
     cube.fillStyle = "green";
-    x -=1
+    x -=5
     cube.fillRect(x, y, 10, 10);
     //right
   }
@@ -53,7 +54,7 @@ function move(){
     cube.fillStyle = "green";
     cube.clearRect(x, y, cube.width, cube.height);
     cube.beginPath();
-    y-=1
+    y-=5
     cube.fillRect(x, y, 10, 10);
     //up
   }
@@ -67,7 +68,7 @@ function move(){
     cube.clearRect(x, y, cube.width, cube.height);
     cube.beginPath();
     cube.fillStyle = "green";
-    x+=1
+    x+=5
     console.log(x)
     console.log(y)
     cube.fillRect(x, y, 10, 10);
@@ -81,7 +82,7 @@ function move(){
     cube.clearRect(x, y, cube.width, cube.height);
     cube.beginPath();
     cube.fillStyle = "green";
-    y+=1
+    y+=5
     cube.fillRect(x, y, 10, 10);
     //down
   }
