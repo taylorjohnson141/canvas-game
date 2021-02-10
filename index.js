@@ -3,7 +3,7 @@ let cub = document.getElementById("cube");
 let swor = document.getElementById("sword");
 var cube = c.getContext("2d");
 var ctx = c.getContext("2d");
-window.addEventListener("keydown",)
+window.addEventListener("keydown",move)
 function initFill() {
 ctx.beginPath();
 ctx.fillStyle = "red";
